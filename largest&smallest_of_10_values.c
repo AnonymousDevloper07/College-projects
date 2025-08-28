@@ -15,10 +15,10 @@ largest=k;
 }
 if (k<smallest)
 {
-smallest=k
-;
+smallest=k;
 }
 }
 printf("largest is:%d\nsmallest is:%d\n",largest,smallest);
 return 0;
 }
+
