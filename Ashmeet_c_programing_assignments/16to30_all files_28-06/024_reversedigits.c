@@ -2,33 +2,22 @@
 #include <stdio.h>
 
 int main() {
-    int num, digit;
-    int a,b,c;
+    int a,b=0,d=0;
     printf("Enter a number: ");
-    scanf("%d", &num);
+    scanf("%d", &a);
 
-    printf("Digits: ");
+    printf("the reverse is: ");
 
     int divisor = 1;
     int temp = num;
-    while (temp >= 10) {
-        temp=temp/10;
-        divisor=divisor*10;
+    while(a!=0)
+    {
+        d=a%10;
+        b=(b*10)+d;
+        a=a/10;
     }
     
-    
-    digit = num / divisor;
-    num=num%divisor;
-    divisor=divisor/10;   
-    a=digit;
-    a = num / divisor;
-    num=num%divisor;
-    divisor=divisor/10;
-    b=a;
-    b= num / divisor;
-    num=num%divisor;
-    divisor=divisor/10;
-    c=b;
-    printf("%d%d%d",c,b,a);
+    printf("%d",b);
     return 0;
 }
+
